@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de las parejas</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Juego de las parejas</h1>
+    <div id="cartas">
+        Seleccione el tipo de cartas : <br> <br>
+        <button onclick="ayudaMenu()">Ayuda</button> <br><br>
+        <img src="img/bastos/1.jpg" class="menu" onclick="bastos()">
+        <img src="img/copas/1.jpg" class="menu" onclick="copas()">
+        <img src="img/oro/1.jpg" class="menu" onclick="oros()">
+        <img src="img/espadas/1.jpg" class="menu" onclick="espadas()">
+    </div>
+
+    <div id="popup" style="display: none;">
+        <div class="content-popup">
+            <div>
+                <h2>¿Quiere volver a jugar con el mismo palo de la baraja?</h2>
+                <button onclick="siJugar()" class="finJuego">Sí</button>
+                <button onclick="cambiarTipo()" class="finJuego">No</button>
+                <div style="float:left; width:100%;"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</body>
+
+</html>
